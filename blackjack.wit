@@ -1,0 +1,9 @@
+record vec3 {
+  x: f32, y: f32, z: f32,
+}
+
+resource half-edge-mesh {
+    vertex-position: function(vid: u64) -> vec3
+}
+
+log: function(s: string)

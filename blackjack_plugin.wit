@@ -1,0 +1,2 @@
+use { half-edge-mesh } from blackjack
+plugin-main: function(mesh: half-edge-mesh)

@@ -1,0 +1,285 @@
+host v0.1.0 (/home/josep/Repositories/wasm_tests/host)
+├── wasmtime v0.34.1
+│   ├── anyhow v1.0.56
+│   ├── async-trait v0.1.52 (proc-macro)
+│   │   ├── proc-macro2 v1.0.36
+│   │   │   └── unicode-xid v0.2.2
+│   │   ├── quote v1.0.15
+│   │   │   └── proc-macro2 v1.0.36 (*)
+│   │   └── syn v1.0.86
+│   │       ├── proc-macro2 v1.0.36 (*)
+│   │       ├── quote v1.0.15 (*)
+│   │       └── unicode-xid v0.2.2
+│   ├── backtrace v0.3.64
+│   │   ├── addr2line v0.17.0
+│   │   │   └── gimli v0.26.1
+│   │   │       ├── fallible-iterator v0.2.0
+│   │   │       ├── indexmap v1.8.0
+│   │   │       │   ├── hashbrown v0.11.2
+│   │   │       │   └── serde v1.0.136
+│   │   │       │       └── serde_derive v1.0.136 (proc-macro)
+│   │   │       │           ├── proc-macro2 v1.0.36 (*)
+│   │   │       │           ├── quote v1.0.15 (*)
+│   │   │       │           └── syn v1.0.86 (*)
+│   │   │       │   [build-dependencies]
+│   │   │       │   └── autocfg v1.1.0
+│   │   │       └── stable_deref_trait v1.2.0
+│   │   ├── cfg-if v1.0.0
+│   │   ├── libc v0.2.119
+│   │   ├── miniz_oxide v0.4.4
+│   │   │   └── adler v1.0.2
+│   │   │   [build-dependencies]
+│   │   │   └── autocfg v1.1.0
+│   │   ├── object v0.27.1
+│   │   │   ├── crc32fast v1.3.2
+│   │   │   │   └── cfg-if v1.0.0
+│   │   │   ├── indexmap v1.8.0 (*)
+│   │   │   └── memchr v2.4.1
+│   │   └── rustc-demangle v0.1.21
+│   │   [build-dependencies]
+│   │   └── cc v1.0.73
+│   │       └── jobserver v0.1.24
+│   │           └── libc v0.2.119
+│   ├── bincode v1.3.3
+│   │   └── serde v1.0.136 (*)
+│   ├── cfg-if v1.0.0
+│   ├── indexmap v1.8.0 (*)
+│   ├── lazy_static v1.4.0
+│   ├── libc v0.2.119
+│   ├── log v0.4.14
+│   │   └── cfg-if v1.0.0
+│   ├── object v0.27.1 (*)
+│   ├── once_cell v1.10.0
+│   ├── paste v1.0.6 (proc-macro)
+│   ├── psm v0.1.17
+│   │   [build-dependencies]
+│   │   └── cc v1.0.73 (*)
+│   ├── rayon v1.5.1
+│   │   ├── crossbeam-deque v0.8.1
+│   │   │   ├── cfg-if v1.0.0
+│   │   │   ├── crossbeam-epoch v0.9.7
+│   │   │   │   ├── cfg-if v1.0.0
+│   │   │   │   ├── crossbeam-utils v0.8.7
+│   │   │   │   │   ├── cfg-if v1.0.0
+│   │   │   │   │   └── lazy_static v1.4.0
+│   │   │   │   ├── lazy_static v1.4.0
+│   │   │   │   ├── memoffset v0.6.5
+│   │   │   │   │   [build-dependencies]
+│   │   │   │   │   └── autocfg v1.1.0
+│   │   │   │   └── scopeguard v1.1.0
+│   │   │   └── crossbeam-utils v0.8.7 (*)
+│   │   ├── either v1.6.1
+│   │   └── rayon-core v1.9.1
+│   │       ├── crossbeam-channel v0.5.2
+│   │       │   ├── cfg-if v1.0.0
+│   │       │   └── crossbeam-utils v0.8.7 (*)
+│   │       ├── crossbeam-deque v0.8.1 (*)
+│   │       ├── crossbeam-utils v0.8.7 (*)
+│   │       ├── lazy_static v1.4.0
+│   │       └── num_cpus v1.13.1
+│   │           └── libc v0.2.119
+│   │   [build-dependencies]
+│   │   └── autocfg v1.1.0
+│   ├── region v2.2.0
+│   │   ├── bitflags v1.3.2
+│   │   └── libc v0.2.119
+│   ├── serde v1.0.136 (*)
+│   ├── target-lexicon v0.12.3
+│   ├── wasmparser v0.82.0
+│   ├── wasmtime-cache v0.34.1
+│   │   ├── anyhow v1.0.56
+│   │   ├── base64 v0.13.0
+│   │   ├── bincode v1.3.3 (*)
+│   │   ├── directories-next v2.0.0
+│   │   │   ├── cfg-if v1.0.0
+│   │   │   └── dirs-sys-next v0.1.2
+│   │   │       └── libc v0.2.119
+│   │   ├── file-per-thread-logger v0.1.5
+│   │   │   ├── env_logger v0.9.0
+│   │   │   │   ├── atty v0.2.14
+│   │   │   │   │   └── libc v0.2.119
+│   │   │   │   ├── humantime v2.1.0
+│   │   │   │   ├── log v0.4.14 (*)
+│   │   │   │   ├── regex v1.5.5
+│   │   │   │   │   ├── aho-corasick v0.7.18
+│   │   │   │   │   │   └── memchr v2.4.1
+│   │   │   │   │   ├── memchr v2.4.1
+│   │   │   │   │   └── regex-syntax v0.6.25
+│   │   │   │   └── termcolor v1.1.3
+│   │   │   └── log v0.4.14 (*)
+│   │   ├── log v0.4.14 (*)
+│   │   ├── rustix v0.33.4
+│   │   │   ├── bitflags v1.3.2
+│   │   │   ├── io-lifetimes v0.5.3
+│   │   │   └── linux-raw-sys v0.0.42
+│   │   ├── serde v1.0.136 (*)
+│   │   ├── sha2 v0.9.9
+│   │   │   ├── block-buffer v0.9.0
+│   │   │   │   └── generic-array v0.14.5
+│   │   │   │       └── typenum v1.15.0
+│   │   │   │       [build-dependencies]
+│   │   │   │       └── version_check v0.9.4
+│   │   │   ├── cfg-if v1.0.0
+│   │   │   ├── cpufeatures v0.2.1
+│   │   │   ├── digest v0.9.0
+│   │   │   │   └── generic-array v0.14.5 (*)
+│   │   │   └── opaque-debug v0.3.0
+│   │   ├── toml v0.5.8
+│   │   │   └── serde v1.0.136 (*)
+│   │   └── zstd v0.10.0+zstd.1.5.2
+│   │       └── zstd-safe v4.1.4+zstd.1.5.2
+│   │           ├── libc v0.2.119
+│   │           └── zstd-sys v1.6.3+zstd.1.5.2
+│   │               └── libc v0.2.119
+│   │               [build-dependencies]
+│   │               └── cc v1.0.73 (*)
+│   ├── wasmtime-cranelift v0.34.1
+│   │   ├── anyhow v1.0.56
+│   │   ├── cranelift-codegen v0.81.1
+│   │   │   ├── cranelift-bforest v0.81.1
+│   │   │   │   └── cranelift-entity v0.81.1
+│   │   │   │       └── serde v1.0.136 (*)
+│   │   │   ├── cranelift-codegen-shared v0.81.1
+│   │   │   ├── cranelift-entity v0.81.1 (*)
+│   │   │   ├── gimli v0.26.1 (*)
+│   │   │   ├── log v0.4.14 (*)
+│   │   │   ├── regalloc v0.0.34
+│   │   │   │   ├── log v0.4.14 (*)
+│   │   │   │   ├── rustc-hash v1.1.0
+│   │   │   │   └── smallvec v1.8.0
+│   │   │   ├── smallvec v1.8.0
+│   │   │   └── target-lexicon v0.12.3
+│   │   │   [build-dependencies]
+│   │   │   └── cranelift-codegen-meta v0.81.1
+│   │   │       └── cranelift-codegen-shared v0.81.1
+│   │   ├── cranelift-entity v0.81.1 (*)
+│   │   ├── cranelift-frontend v0.81.1
+│   │   │   ├── cranelift-codegen v0.81.1 (*)
+│   │   │   ├── log v0.4.14 (*)
+│   │   │   ├── smallvec v1.8.0
+│   │   │   └── target-lexicon v0.12.3
+│   │   ├── cranelift-native v0.81.1
+│   │   │   ├── cranelift-codegen v0.81.1 (*)
+│   │   │   └── target-lexicon v0.12.3
+│   │   ├── cranelift-wasm v0.81.1
+│   │   │   ├── cranelift-codegen v0.81.1 (*)
+│   │   │   ├── cranelift-entity v0.81.1 (*)
+│   │   │   ├── cranelift-frontend v0.81.1 (*)
+│   │   │   ├── itertools v0.10.3
+│   │   │   │   └── either v1.6.1
+│   │   │   ├── log v0.4.14 (*)
+│   │   │   ├── smallvec v1.8.0
+│   │   │   ├── wasmparser v0.82.0
+│   │   │   └── wasmtime-types v0.34.1
+│   │   │       ├── cranelift-entity v0.81.1 (*)
+│   │   │       ├── serde v1.0.136 (*)
+│   │   │       ├── thiserror v1.0.30
+│   │   │       │   └── thiserror-impl v1.0.30 (proc-macro)
+│   │   │       │       ├── proc-macro2 v1.0.36 (*)
+│   │   │       │       ├── quote v1.0.15 (*)
+│   │   │       │       └── syn v1.0.86 (*)
+│   │   │       └── wasmparser v0.82.0
+│   │   ├── gimli v0.26.1 (*)
+│   │   ├── log v0.4.14 (*)
+│   │   ├── more-asserts v0.2.2
+│   │   ├── object v0.27.1 (*)
+│   │   ├── target-lexicon v0.12.3
+│   │   ├── thiserror v1.0.30 (*)
+│   │   ├── wasmparser v0.82.0
+│   │   └── wasmtime-environ v0.34.1
+│   │       ├── anyhow v1.0.56
+│   │       ├── cranelift-entity v0.81.1 (*)
+│   │       ├── gimli v0.26.1 (*)
+│   │       ├── indexmap v1.8.0 (*)
+│   │       ├── log v0.4.14 (*)
+│   │       ├── more-asserts v0.2.2
+│   │       ├── object v0.27.1 (*)
+│   │       ├── serde v1.0.136 (*)
+│   │       ├── target-lexicon v0.12.3
+│   │       ├── thiserror v1.0.30 (*)
+│   │       ├── wasmparser v0.82.0
+│   │       └── wasmtime-types v0.34.1 (*)
+│   ├── wasmtime-environ v0.34.1 (*)
+│   ├── wasmtime-fiber v0.34.1
+│   │   └── rustix v0.33.4 (*)
+│   │   [build-dependencies]
+│   │   └── cc v1.0.73 (*)
+│   ├── wasmtime-jit v0.34.1
+│   │   ├── addr2line v0.17.0 (*)
+│   │   ├── anyhow v1.0.56
+│   │   ├── bincode v1.3.3 (*)
+│   │   ├── cfg-if v1.0.0
+│   │   ├── cpp_demangle v0.3.5
+│   │   │   └── cfg-if v1.0.0
+│   │   ├── gimli v0.26.1 (*)
+│   │   ├── log v0.4.14 (*)
+│   │   ├── object v0.27.1 (*)
+│   │   ├── region v2.2.0 (*)
+│   │   ├── rustc-demangle v0.1.21
+│   │   ├── rustix v0.33.4 (*)
+│   │   ├── serde v1.0.136 (*)
+│   │   ├── target-lexicon v0.12.3
+│   │   ├── thiserror v1.0.30 (*)
+│   │   ├── wasmtime-environ v0.34.1 (*)
+│   │   └── wasmtime-runtime v0.34.1
+│   │       ├── anyhow v1.0.56
+│   │       ├── backtrace v0.3.64 (*)
+│   │       ├── cfg-if v1.0.0
+│   │       ├── indexmap v1.8.0 (*)
+│   │       ├── lazy_static v1.4.0
+│   │       ├── libc v0.2.119
+│   │       ├── log v0.4.14 (*)
+│   │       ├── memoffset v0.6.5 (*)
+│   │       ├── more-asserts v0.2.2
+│   │       ├── rand v0.8.5
+│   │       │   ├── libc v0.2.119
+│   │       │   ├── rand_chacha v0.3.1
+│   │       │   │   ├── ppv-lite86 v0.2.16
+│   │       │   │   └── rand_core v0.6.3
+│   │       │   │       └── getrandom v0.2.5
+│   │       │   │           ├── cfg-if v1.0.0
+│   │       │   │           └── libc v0.2.119
+│   │       │   └── rand_core v0.6.3 (*)
+│   │       ├── region v2.2.0 (*)
+│   │       ├── rustix v0.33.4 (*)
+│   │       ├── thiserror v1.0.30 (*)
+│   │       ├── wasmtime-environ v0.34.1 (*)
+│   │       └── wasmtime-fiber v0.34.1 (*)
+│   │       [build-dependencies]
+│   │       └── cc v1.0.73 (*)
+│   ├── wasmtime-runtime v0.34.1 (*)
+│   └── wat v1.0.41
+│       └── wast v39.0.0
+│           ├── leb128 v0.2.5
+│           ├── memchr v2.4.1
+│           └── unicode-width v0.1.9
+└── wit-bindgen-wasmtime v0.1.0 (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743)
+    ├── anyhow v1.0.56
+    ├── bitflags v1.3.2
+    ├── thiserror v1.0.30 (*)
+    ├── wasmtime v0.34.1 (*)
+    └── wit-bindgen-wasmtime-impl v0.1.0 (proc-macro) (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743)
+        ├── proc-macro2 v1.0.36 (*)
+        ├── syn v1.0.86 (*)
+        ├── wit-bindgen-gen-core v0.1.0 (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743)
+        │   ├── anyhow v1.0.56
+        │   └── wit-parser v0.1.0 (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743)
+        │       ├── anyhow v1.0.56
+        │       ├── id-arena v2.2.1
+        │       ├── pulldown-cmark v0.8.0
+        │       │   ├── bitflags v1.3.2
+        │       │   ├── memchr v2.4.1
+        │       │   └── unicase v2.6.0
+        │       │       [build-dependencies]
+        │       │       └── version_check v0.9.4
+        │       ├── unicode-normalization v0.1.19
+        │       │   └── tinyvec v1.5.1
+        │       │       └── tinyvec_macros v0.1.0
+        │       └── unicode-xid v0.2.2
+        └── wit-bindgen-gen-wasmtime v0.1.0 (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743)
+            ├── heck v0.3.3
+            │   └── unicode-segmentation v1.9.0
+            ├── wit-bindgen-gen-core v0.1.0 (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743) (*)
+            └── wit-bindgen-gen-rust v0.1.0 (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743)
+                ├── heck v0.3.3 (*)
+                └── wit-bindgen-gen-core v0.1.0 (https://github.com/bytecodealliance/wit-bindgen/?rev=273947434f9561c3433fbe7aa1103af7613ac9be#27394743) (*)
